@@ -1,5 +1,5 @@
 # single-spa-angular bug report
-This repo reproduces a single-spa-angular bug.
+This repo reproduces a single-spa-angular bug. https://github.com/single-spa/single-spa-angular/issues/218
 
 ## Description
 Lazy loaded modules within Single-spa-angular applications fail to load (only in --prod mode) if another single-spa-angular application has already lazy-loaded a module.
