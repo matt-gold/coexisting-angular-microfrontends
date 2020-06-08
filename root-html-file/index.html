@@ -27,6 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.0.0/extras/named-register.min.js"></script>
   </head>
   <body>
+    <p>To reproduce the bug, go to app1 and click the link to lazy-load a module. Then go to app2 and click the link there to try to lazy-load a module from app2.</p>
     <script>
       System.import('single-spa').then(function (singleSpa) {
         singleSpa.registerApplication(

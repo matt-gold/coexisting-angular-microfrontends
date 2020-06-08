@@ -5,6 +5,16 @@ import { APP_BASE_HREF } from '@angular/common';
 
 
 const routes: Routes = [
+  {
+    path: 'app1',
+    children: [{
+      path: 'lazy',
+      loadChildren: () =>
+        import('./lazy1-module/lazy1.module').then(
+          m => m.LazyModule
+        )
+    }]
+  },
   { path: '**', component: EmptyRouteComponent },
 ];
 
